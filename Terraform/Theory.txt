@@ -1,0 +1,47 @@
+Terraform
+it is an open-source Infrastructure as code (IaC) tool.
+
+IaC
+It is tools allow you to build,chane and manage instracture in safe ,consistent and repeatable ways using configuration files instead of GUI.
+
+Flow of terraform
+1.Practitioner(identify the instracture for project) 
+2.IaC (Write configuration file to define instracture)
+3.Init (install the required terraform provider)
+4.Plan (Preview changes terraform will make)
+5.Apply (Make change to build Infrastructure)
+
+Install terraform
+1. Visit https://developer.hashicorp.com/terraform/install#windows and download setup of terraform as per your system.
+2. Now extract the folder and copy the path then open the environment variable then click on path then create new path then paste the path copied.then click ok.
+3. Now open cmd and type "terraform version" you will see it will get accessible.
+
+Create AWS free Account 
+1. Setting up aws account (medium)
+2. Create a IAM user & access key creation (medium link)
+
+Install AWS CLI 
+1. Step to install AWS CLI.
+2. configuring the aws credentials for windows
+    Method 1
+    1.create a file with name .env and add below content to it
+        AWS_ACCESS_KEY_ID={enter your access key}
+        AWS_SECRET_ACCESS_KEY={enter your key}
+    2.open poweshell and run below  to load .env file
+        Get-Content ../.env | ForEach-Object {
+        if ($_ -match "^(.*?)=(.*)$") {
+            [System.Environment]::SetEnvironmentVariable($matches[1], $matches[2], "Process")
+        }
+        }
+    3.To get details of login  
+        aws sts get-caller-identit
+
+    Method 2
+
+
+Terraform main commands
+terraform init : To initialise terraform
+terraform validate : To validate configuration file
+terraform plan : To preview the change which will made
+terraform apply : To finally made changes or build.
+terraform destroy : To destroy the Infrastructure build by configuration file.
