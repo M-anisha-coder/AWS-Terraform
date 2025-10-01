@@ -54,10 +54,11 @@ Here's a growing list of real-world projects using Terraform + AWS:
 
 ## 📦 Requirements
 
-- Terraform (v1.0+ recommended)
-- AWS Free Tier Account
-- AWS CLI
-- Basic command-line knowledge
+- [Terraform](https://medium.com/@manishavisvkrama12345/how-to-set-up-terraform-on-windows-step-by-step-guide-dbf47603db8c) (v1.0+ recommended)
+- [AWS Free Tier Account](https://aws.amazon.com/free/)
+- [AWS CLI](https://docs.aws.amazon.com/cli/)
+- Basic command-line knowledge 🖥️
+
 
 ---
 
